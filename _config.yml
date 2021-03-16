@@ -35,7 +35,6 @@ url: "https://yzalvin.github.io" # the base hostname & protocol for your site, e
 github_username: yzAlvin
 
 # Build settings
-theme: jekyll-theme-console
 remote-theme: jekyll-theme-console
 plugins:
   - jekyll-feed
