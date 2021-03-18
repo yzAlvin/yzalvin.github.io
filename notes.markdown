@@ -1,15 +1,13 @@
 ---
 layout: page
 title: notes
-permalink: notes
+permalink: /notes
 ---
 
 less notes
 
-# Notes
-
 ## Language Design
-* Test Driven Development
+* [Test Driven Development](/notes/language-design/test-driven-development)
 * Test Doubles
 * Revealing Intent
 * Keeping Things Small
