@@ -8,11 +8,13 @@ less notes
 
 ## Language Design
 * [Test Driven Development](/notes/language-design/test-driven-development)
-* Test Doubles
-* Revealing Intent
-* Keeping Things Small
-* Object Composition
-* Removing Duplication
-* Command Query Separation
-* YAGNI
+* [Test Doubles](/notes/language-design/test-doubles)
+* [Revealing Intent](/notes/language-design/revealing-intent)
+* [Keeping Things Small](/notes/language-design/keeping-things-small)
+* [Object Composition](/notes/language-design/object-composition)
+* [Removing Duplication](/notes/language-design/removing-duplication)
+* [Command Query Separation](/notes/language-design/command-query-separation)
+* [YAGNI](/notes/language-design/yagni)
 
+## Other
+* [Vim Notes](/notes/vim)
