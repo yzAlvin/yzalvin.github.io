@@ -16,7 +16,13 @@ permalink: /notes/language-design/revealing-intent
 
 ## What is it?
 
+Writing code in such a way that it is easy to read and understand, therefore more maintainable.
+
 ## Why
+
+Readability of code is very important.
+
+More time is spent reading over code than actually coding, in larger projects it's important that others can understand your code and you can understand theirs.
 
 ## Who
 
@@ -25,3 +31,13 @@ permalink: /notes/language-design/revealing-intent
 ## Where
 
 ## How
+
+Comments are not a good way to reveal intent.
+
+Comments should be rarely used, if ever.
+
+Instead of comments, you could name things better, make code smaller, extract functionality.
+
+Naming should be consistent.
+
+Names should reference mainly domain concepts.:
