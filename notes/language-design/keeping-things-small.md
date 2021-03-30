@@ -16,7 +16,11 @@ permalink: /notes/language-design/keeping-things-small
 
 ## What is it?
 
+Keeping things small means what it says.
+
 ## Why
+
+It improves readability and therefore maintainability.
 
 ## Who
 
@@ -24,4 +28,12 @@ permalink: /notes/language-design/keeping-things-small
 
 ## Where
 
+* Classes
+* Methods
+
 ## How
+
+* Don't make lines too long
+* Think of the simplest way to do things
+* Remove as many levels of indentation as feasible
+* Classes and methods should be small components with clear responsibilities.
