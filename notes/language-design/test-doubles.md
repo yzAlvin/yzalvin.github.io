@@ -16,7 +16,34 @@ permalink: /notes/language-design/test-doubles
 
 ## What is it?
 
+Test doubles are used to replace production objects/functions to isolate items under test from the implementation of their dependencies.
+
+### Subs
+Return hard coded values, they ensure the returned value is always the same.
+
+Focuses on state of the dependency
+
+### Mocks
+An implementation of the contract, and can also record arguments and if and how many times a method was called
+
+Focuses on behaviour of the dependency
+
+### Fakes
+An object with working implementations, but implementation is usually not suitable for productions
+
+### Dummies
+Contain no logic and no return values. Usually just used to fill a parameter
+
+### Spies
+Listens to methods to see if it was called and how many times. Like a mock.
+
 ## Why
+
+They provide a means of keeping tests fast by removing slow running dependencies (generally IO) like databases, web servers and file systems.
+
+They are also useful in unit tests, an example is a function that returns a timestamp.
+
+Because it is not a "pure" function (it does not always return the same thing when it is called), we need some way to test it. We can use a mock to test it does what we expect when we supply it some value.
 
 ## Who
 
@@ -25,3 +52,16 @@ permalink: /notes/language-design/test-doubles
 ## Where
 
 ## How
+
+Often facilitated by dependency inversion.
+
+Writing your own basic test doubles without a testing framework.
+
+Using a framework like Moq in C#
+
+
+# TODO
+
+* Write my own basic test doubles
+* swap out parts of solution code base with mocks to isolate behaviour for testing
+* When to use framework test doubles vs writing own

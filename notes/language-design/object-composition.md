@@ -39,8 +39,11 @@ But like with everything else don't stick to rules without critical thinking.
 
 ## Where
 
+Interfaces that are large should be split into smaller and more specific ones. Clients should only know about methods that are relevant.
 
 ## How
+
+Avoid object hierarchies.
 
 Instead of creating a single parent class:
 

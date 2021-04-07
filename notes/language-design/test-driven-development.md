@@ -114,3 +114,9 @@ Keep the unit tests small.
 * Avoid testing precise execution behavior timing or performance
 * Avoid testing implementation details
 * Avoid slow tests
+* Map test files to class files
+
+* Tests should:
+	* Increase readability
+	* Be self-documenting
+	* Increase confidence the code **works**
