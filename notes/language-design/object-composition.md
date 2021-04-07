@@ -16,12 +16,34 @@ permalink: /notes/language-design/object-composition
 
 ## What is it?
 
+Object composition is useful for when we want to share functionality between multiple classes, and inheritance is not a good solution.
+
+Inheritance is when you design types around what they ARE
+
+Composition is designing around what they DO
+
+
 ## Why
+
+Composition is more maintainable than inheritance. It also helps to keep the size of the project smaller and (objectively) neat.
 
 ## Who
 
 ## When
 
+One way to remember when to use either is:
+If there is a 'has a' relationship we could use composition
+If there is a 'is a' relationship we could use inheritance
+
+But like with everything else don't stick to rules without critical thinking.
+
 ## Where
 
+
 ## How
+
+Instead of creating a single parent class:
+
+1. Create one more more smaller classes or interfaces that encapsulate the desired functionality
+2. Include instances of these in any new classes we wish to share functionality with
+3. Expose the desired functionality by using these instances
