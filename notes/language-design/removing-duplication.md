@@ -38,5 +38,5 @@ Removing duplication will also make things smaller, neater, more readable ==> mo
 
 ## How
 
-Extract duplicate patterns into appropriate methods/classes
+Pull duplicate patterns into appropriate methods/classes
 Polymorphism

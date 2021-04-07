@@ -15,12 +15,21 @@ permalink: /notes/language-design/command-query-separation
 | L4	| Consistently applies command query separation in code. Identifies exceptions to the general rule and can articulate trade-offs with others. |
 
 ## What is it?
+Command Query Separation is a principle of imperative programming.
+
+Every method should either be a:
+* **command** that performs an action
+* **query** that returns data to the caller
+
+but not both.
 
 ## Why
+
 
 ## Who
 
 ## When
+There are some exceptions, for example, the `pop` method of a stack datastructure both performs the action of removing the top element of the stack, but also returns the removed element.
 
 ## Where
 
