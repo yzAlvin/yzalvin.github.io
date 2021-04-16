@@ -19,3 +19,4 @@ less notes
 
 ## Other
 * [Vim Notes](/notes/vim)
+* [Code Smells](/notes/code-smells)
