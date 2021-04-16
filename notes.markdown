@@ -15,6 +15,7 @@ less notes
 * [Removing Duplication](/notes/language-design/removing-duplication)
 * [Command Query Separation](/notes/language-design/command-query-separation)
 * [YAGNI](/notes/language-design/yagni)
+* [SOLID Principles](/notes/language-design/solid)
 
 ## Other
 * [Vim Notes](/notes/vim)
