@@ -17,6 +17,7 @@ permalink: /notes/language-design/object-composition
 ## What is it?
 
 Object composition is useful for when we want to share functionality between multiple classes, and inheritance is not a good solution.
+To put it simply, composition contains classes of other classes that implement the desired functionality
 
 Inheritance is when you design types around what they ARE
 

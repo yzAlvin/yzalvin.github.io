@@ -22,6 +22,7 @@ title: Alvin Zhao
 header_pages:
  - about.markdown
  - notes.markdown
+ - blog.markdown
 footer: "I made this website/blog to keep my notes online and to learn some Ruby."
 email: alvin99yz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"

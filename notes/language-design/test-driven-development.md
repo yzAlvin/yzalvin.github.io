@@ -16,9 +16,14 @@ permalink: /notes/language-design/test-driven-development
 
 ## What is it?
 
-I only have experience writing unit tests, and I guess manual testing.
-
 Test Driven Development is writing tests first before the actual code, and then continually running them to make sure every new feature adds new functionality as well as preserves old functionality.
+
+The whole point is to wear different hats
+* testing perspective
+* developer perspective
+be able to think differently
+
+Think about how to test the problem before how to implement it.
 
 A useful pattern to help with TDD is Red-Green-Refactor ..
 
@@ -27,6 +32,14 @@ Red-Green-Refactoring Pattern:
 * Write code to pass Test
 * Refactor code to meet standards
 * Repeat!!
+
+Basically, a bottom-up approach works from the specifics to the general, while a top-down approach goes from the general to the specifics.
+
+Top-down approaches emphasise planning and a complete understanding of the system. No coding begins until a sufficient level of detail has been reached in the design of at least some part of the system. These are implemented by attaching stubs in place of the module. However, delays testing ultimate functional units of a system until significant design is complete.
+
+Bottom-up emphasizes coding and early testing, which begins as soon as the firt module has been specified. Runs the risk that modules may be coded without having a clear idea of how they link to other parts of the system, such linking may not be as eary as first thought.
+
+Modern software design approaches usually combine both.
 
 ### Bottom Up Approach
 
@@ -90,6 +103,31 @@ TDD is not sufficient where full functional tests are required. eg. user interfa
 
 ## How
 
+# Before Coding
+
+## Understand the problem, try not to think about the implementation
+
+## Tasking
+* List all the scenarios
+* Scenarios should relate to the problem, not the steps to solve the problem
+* Solving all scenarios should solve the problem
+
+## Design the interface
+* The interface should focus on the problem instead of steps in the solution
+* Find out the minimal required inputs to solve the problem
+* Find out the output
+
+## Design Test Cases
+* Test cases should be specific
+* From the simplest
+* Just enough to start, does not need to cover all scenarios
+
+Do not think about implementation at all, only testing. Do not worry about the steps
+We are creating a safe net for refactoring, if we test implementation details, if we change implementation but the behaviour remains the same, tests will still fail.
+
+Difference between scenario and test case
+Scenarios are very high level, split into as small components as possible.
+
 KISS
 
 YAGNI
@@ -120,3 +158,27 @@ Keep the unit tests small.
 	* Increase readability
 	* Be self-documenting
 	* Increase confidence the code **works**
+
+
+- Test requirements, not low level
+- Test public API. Given when then
+- Test the exports from a module
+- Focus on higher-level
+- Test modules, not class
+- Refactoring is needed to see what is implementation and what is exports from module
+- Test behaviours
+- Think about your code as an api
+- Test the abstraction, not the implementation
+- Test are isolated and with shared fixture (to run quickly)
+- Red-green-refactor (go fast to working code)
+- No new tests during refactoring
+- Heavy coupling is the problem with all software
+- Thin public api
+- Refactoring = changing internals
+- Patterns in the refactoring
+- If you're not really sure, write tests for implementation (delete the tests)
+- Not classes, behaviours
+- Don't isolate classes in testing
+- Private methods (these are implementation details)
+
+

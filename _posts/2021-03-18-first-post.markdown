@@ -7,23 +7,24 @@ Hello,
 
 I started this to take a bit of a break from coding, and to have a place to keep notes, practice markdown, and maybe learn ruby. 
 
-I was heavily inspired by other individuals such as peter collingridge, nayuki and shirley wu.
+I was heavily inspired by many other developer blogs like peter collingridge, project nayuki and many others.
+I don't really expect anyone to read my notes except myself.
 
-## Some 'interesting' tidbits about me maybe:
+# Practice Markdown
+## Stuff about me maybe:
 
-* colemak
+* colemak keyboard layout
 * 40% ortholinear keyboard
-* want to do a triathlon
-* enjoy playing chess even if i'm not very good
-* love playing board games (**coup**)
+* triathlon
+* chess casually
+* board games (**coup**)
 
-## Some things I want to learn/be better at in order:
+## I want to be better at:
 
 1. cooking
 2. cycling
 3. swimming
 4. *vim*
-5. declarative programming
 5. chess
 6. Linux 
 
@@ -33,6 +34,8 @@ A really great quote I heard someone say at work was
  > “If you don't ask, the answer is always no.”
 
 I think it changed my mindset a little bit about asking for help.
+
+> Compare Yourself To Who You Were Yesterday, Not To Who Someone Else Is Today
 
 I've been interested in declarative programming ever since I was shown an example of imperative vs declarative approaches to programming.
 
@@ -57,5 +60,5 @@ Declarative
 	List<int> evenNumbers = array.Where(n => n % 2 == 0).ToList();
 	return evenNumbers;
 
-Okay I was sort of reaching just to include as much [markdown syntax](https://www.markdownguide.org/basic-syntax/) as I can so until next time..
+Okay sort of reaching just to include as much [markdown syntax](https://www.markdownguide.org/basic-syntax/) as I can so bye
 

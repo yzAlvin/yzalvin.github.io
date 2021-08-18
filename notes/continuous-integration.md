@@ -29,5 +29,9 @@ permalink: /notes/continuous-integration
 ## Where
 
 ## How
+Buildkite agents are small, reliable and cross-platform build runners that run automated builds. Buildkite never accesses your code, and does not run any agents, so you need to install and run agents on your own infrastructure. You can do this on you local development machine, an existing CI machine, or a new server.
 
+Every agent comes with a config.
 
+# Containerisation
+Docker is an open platform

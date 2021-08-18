@@ -17,6 +17,7 @@ permalink: /notes/language-design/test-doubles
 ## What is it?
 
 Test doubles are used to replace production objects/functions to isolate items under test from the implementation of their dependencies.
+They are helpers that make it possible to control dependencies, so that the unit under test can be tested under certain circumstances.
 
 ### Subs
 Return hard coded values, they ensure the returned value is always the same.
@@ -45,6 +46,9 @@ They are also useful in unit tests, an example is a function that returns a time
 
 Because it is not a "pure" function (it does not always return the same thing when it is called), we need some way to test it. We can use a mock to test it does what we expect when we supply it some value.
 
+The unit we are testing can be tested in full isolation if all dependencies are test doubles.
+They are also great to trigger hard-to-create scenarios.
+
 ## Who
 
 ## When
@@ -59,9 +63,15 @@ Writing your own basic test doubles without a testing framework.
 
 Using a framework like Moq in C#
 
+There is not a huge difference between using a mocking framework and writing implementations. You can accomplish the same thing (testing your code) it is just about the means to do it.
 
-# TODO
+Mocks require a framework. Not a big deal, just installing a package. You will also have to learn the framework, investing time in it. Might have to redo the time investment if you switch frameworks. Writing your own implementations is just using the programing language natively. Learning curve is smaller and perhaps more intuitive if you use test implementations.
 
-* Write my own basic test doubles
-* swap out parts of solution code base with mocks to isolate behaviour for testing
-* When to use framework test doubles vs writing own
+However test implementations bloats the code base. Often they ase just stubs, hard to see why you would want to have an extra class. - with mocks, they reside within the test method and configured in this scope. It can make it hard to understand what is going on in the test, but in scenarios where the amount of logic is small, it is good the setup is in the code, so you don't need to open other classes.
+
+
+-    Mocks require a framework
+-    You have to learn and master the mocking framework (invest time)
+-    Using mocks you avoid having extra test double classes for your tests
+-    Setting up mocks and their expectations can take up a lot of space in your tests
+-    With mocks, the expected behavior of your dependencies is within in your test - not in separate classes
